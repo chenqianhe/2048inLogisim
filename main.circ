@@ -575,6 +575,15 @@ This file is intended to be loaded by Logisim http://logisim.altervista.org
       <a name="labelcolor" val="#000000"/>
     </tool>
   </lib>
+  <lib desc="file#RAM.circ" name="10">
+    <tool name="RAM">
+      <a name="facing" val="east"/>
+      <a name="label" val=""/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+      <a name="labelcolor" val="#000000"/>
+    </tool>
+  </lib>
   <main name="◇单周期MIPS"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
