@@ -5,10 +5,10 @@
 #	2:生成mod4随机数
 #	34:输出棋盘上的16个数字
 #中断程序地址
-#	right:0x00003098
-#	left:0x000031d8
-#	up:0x00003318
-#	down:0x00003458
+#	right:0x000030a0
+#	left:0x000031e0
+#	up:0x00003320
+#	down:0x00003460
 addi $s0,$zero,0
 addi $s1,$zero,16
 addi $s2,$zero,32
@@ -54,6 +54,8 @@ addi $t0,$t0,1
 j main_loop4
 main_label4:
 sw $s4,0($s3)
+addi $v0,$0,34         # system call for LED display 
+syscall
 main_loop:
 j main_loop
 
