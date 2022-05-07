@@ -1,4 +1,17 @@
 # 2048 in Logisim
+
+## 完整电路
+
+![image-20220506095734989](https://markdownpicsupload.oss-cn-beijing.aliyuncs.com/img/image-20220506095734989.png)
+
+
+
+## Gaming
+
+![gaming](https://markdownpicsupload.oss-cn-beijing.aliyuncs.com/img/gaming.gif)
+
+
+
 ## CPU
 
 CPU为MIPS单周期CPU，支持24+4条基本指令
@@ -9,7 +22,9 @@ CPU为MIPS单周期CPU，支持24+4条基本指令
 
 ## 2048代码逻辑
 
-（待补充）
+1. 四个方向的操作定义为四个单级中断，不可打断
+2. 数字合并处理逻辑和新随机数生成逻辑放在每个中断的处理中
+3. 16个格子的数据通过操作16个并行存储器完成
 
 
 
@@ -63,4 +78,4 @@ endmodule
 
 ## 屏幕显示设计
 
-（待补充）
+用16块LED屏幕完成16个格子对应数字的显示；共支持2,4,8,16,32,64,128,256,512,1024,2048和空共12中情况的显示。
